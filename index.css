@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "kanit";
+    src: url(./font/Kanit/Kanit-Medium.ttf2/);
+}
+
+:root {
+    --color-one: #efd8d7;
+    --color-two: #e0ebf3;
+    --color-dark: #4c3c31;
+    --color-gray: #999999;
+    --color-light: #fbf9f8;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 5em;
+    color: var(--color-dark);
+    font-weight: bold;
+}
+
+header {
+    background-color: var(--color-light);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: "Caveat";
+    right: 0;
+    background-color: var(--color-light);
+}
+
+.navbar_title {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.link {
+    font-size: 1.5em;
+    margin: 0 20px;
+    position: relative;
+    color: var(--color-dark) !important;
+}
+
+.link::after {
+    content: "";
+    background-color: var(--color-dark);
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    height: 3px;
+    transition: all 500ms;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+
+}
+
+.header_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_meimg {
+    width: 50%;
+}
+
+.header_icon_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_icon {
+    margin: 20px;
+    font-size: 4em;
+    transition: all 500ms;
+    color: var(--color-dark);
+}
+
+.header_icon:hover {
+    color: var(--color-gray);
+}
+
+.header_content h3 {
+    font-family: "微軟正黑體", "kanit";
+}
+
+.header_btn {
+    background-color: var(--color-one);
+    color: #4c3c31 !important;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.header_btn:hover {
+    background-color: var(--color-light);
+    font-size: 20px;
+}
+
+/* about */

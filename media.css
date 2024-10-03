@@ -1,0 +1,10 @@
+ @media screen and(min-width:576px) {
+     body {
+         background-color: antiquewhite;
+     }
+
+     .header_content {
+         margin-top: 50px;
+     }
+
+ }
