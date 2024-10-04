@@ -1,1 +1,19 @@
-123456
+const WORKDATA = [{
+    name: "全國技藝競賽網頁設計作品",
+    image1: ["./images/work1.png", "./images/work1-3.png", "./images/work1-5.png"],
+    image2: ["./images/work1-2.png", "./images/work1-4.png", "./images/work1-6.png"],
+    href: "https://shelly9457.github.io/contest/",
+    text: ""
+}, {
+    name: "專題競賽-欣欣相伴行銷網站",
+    image1: ["./images/work2.png", "./images/work2-3.png", "./images/work2-5.png"],
+    image2: ["./images/work2-2.png", "./images/work2-4.png", "./images/work2-6.png"],
+    href: "https://shelly9457.github.io/New-Taipei-City/",
+    text: ""
+}, {
+    name: "新北勢伴手禮研發中心行銷網站",
+    image1: ["./images/work3.png", "./images/work3-3.png", "./images/work3-5.png"],
+    image2: ["./images/work3-2.png", "./images/work3-4.png", "./images/work3-6.png"],
+    href: "https://shelly9457.github.io/center/",
+    text: ""
+},]

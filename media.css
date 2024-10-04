@@ -1,9 +1,37 @@
+@media (max-width:992px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* .contest_font_box {
+        display: none;
+    } */
+
+    .contest_me {
+        display: flex;
+        align-items: center;
+        text-wrap: nowrap;
+    }
+}
+
 @media (max-width:768px) {
+
+
     .header_content_one {
         margin-top: 100px;
     }
 
     .header_content {
         text-align: center;
+    }
+
+    .title_line {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    body {
+        font-size: 12px;
     }
 }

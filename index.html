@@ -43,10 +43,10 @@
                             <a class="nav-link link" href="#contest">contest</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link" href="#">work</a>
+                            <a class="nav-link link" href="#work">work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link" href="#">contest</a>
+                            <a class="nav-link link" href="#skill">skill</a>
                         </li>
                     </ul>
                 </div>
@@ -76,9 +76,13 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="app">
         <div id="contest"></div>
         <div class="contest container-fluid py-5">
+            <div class="contest_me">
+                <h1 class="contest_title">contest ME</h1>
+                <div class="title_line ms-3"></div>
+            </div>
             <div class="container contest_container py-5">
                 <div class="row">
                     <div class="col-sm-12 col-lg-7 contest_content">
@@ -136,8 +140,6 @@
                                 </div>
                             </div>
                         </div>
-<<<<<<< HEAD
-=======
                         <div class="contest_item">
                             <div>
                                 <div class="fs-3 contest_item_title">53屆全國技能競賽青年組</div>
@@ -151,15 +153,52 @@
                                 <div class="contest_line"></div>
                             </div>
                         </div>
->>>>>>> fd592ba86009e220891e5a963a395993b838d43b
                     </div>
-                    <div class="col-sm-12 col-lg-5  box justify-content-end">
+                    <div class="col-sm-12 contest_font_box col-lg-5 box justify-content-end">
                         <img src="./images/contest_font.png" class="contest_font">
-                        <!-- <div class="box">
-                                <h1 class="contest_title">contest ME</h1>
-                                <div class="title_line ms-3"></div>
-                            </div> -->
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="work"></div>
+        <div class="container-fluid work py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="work_content col-sm-12 col-lg-6">
+                        <div class="work_item" v-for="item in workdata">
+                            <h1>{{item.name}}</h1>
+                            <div id="" class="carousel slide carousel-fade work_run" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <a class="carousel-item" :data-bs-interval="2000" :href="item.href" target="_blank"
+                                        v-for="(img,index) in item.image1" :class="{ active: index === 0 }">
+                                        <img :src="img" class="d-block work_img" alt="...">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="work_img2" class="carousel slide carousel-fade work_run" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <a class="carousel-item" :data-bs-interval="2000" :href="item.href" target="_blank"
+                                        v-for="(img,index) in item.image2" :class="{ active: index === 0 }">
+                                        <img :src="img" class="d-block work_img" alt="...">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skill"></div>
+        <div class="container-fluid skill py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="contest_me">
+                            <h1 class="contest_title">contest ME</h1>
+                            <div class="title_line ms-3"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6"></div>
                 </div>
             </div>
         </div>
