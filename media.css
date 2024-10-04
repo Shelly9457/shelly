@@ -3,9 +3,9 @@
         font-size: 16px;
     }
 
-    /* .contest_font_box {
+    .contest_font_box {
         display: none;
-    } */
+    }
 
     .contest_me {
         display: flex;

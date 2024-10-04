@@ -184,12 +184,14 @@ header {
 .contest_title {
     font-family: "Caveat";
     font-size: 5em;
-    color: #4c3c31;
+    color: var(--color-dark);
     letter-spacing: 20px;
 }
 
-.contest_font {
-    width: 45%;
+.contest_font,.work_font {
+    width: 50%;
+    height: 80vh;
+    object-fit: contain;
 }
 
 .title_line {

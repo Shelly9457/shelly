@@ -1,12 +1,24 @@
 window.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to(".contest", {
+    gsap.to(".contest_font", {
         scrollTrigger: {
-            trigger: '.contest_font_box',
+            trigger: '.contest_font',
+            // markers: true,
+            pin: true,
+            start: '40% center',
+            endTrigger: ".contest",
+            end: 'bottom bottom',
+            scrub: 1,
+        }
+    })
+    gsap.to(".work_font", {
+        scrollTrigger: {
+            trigger: '.work_font',
             markers: true,
             pin: true,
-            start: '-100 top',
-            end: 'bottom bottom',
+            start: '40% center',
+            endTrigger: ".work",
+            end: '90% bottom',
             scrub: 1,
         }
     })
