@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".contest", {
         scrollTrigger: {
-            trigger: '.contest_font',
+            trigger: '.contest_font_box',
             markers: true,
             pin: true,
             start: '-100 top',
