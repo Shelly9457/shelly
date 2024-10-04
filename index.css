@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "kanit";
+    src: url(./font/Kanit/Kanit-Medium.ttf2/);
+}
+
+:root {
+    --color-one: #efd8d7;
+    --color-two: #e0ebf3;
+    --color-dark: #4c3c31;
+    --color-gray: #999999;
+    --color-light: #fbf9f8;
+}
+
+body {
+    font-family: "微軟正黑體";
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 5em;
+    color: var(--color-dark);
+    font-weight: bold;
+}
+
+header {
+    background-color: var(--color-light);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: "Caveat";
+    right: 0;
+    background-color: var(--color-light);
+    z-index: 99;
+}
+
+.navbar_title {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.link {
+    font-size: 1.5em;
+    margin: 0 20px;
+    position: relative;
+    color: var(--color-dark) !important;
+}
+
+.link::after {
+    content: "";
+    background-color: var(--color-dark);
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    height: 3px;
+    transition: all 500ms;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+
+}
+
+.header_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_meimg {
+    width: 50%;
+}
+
+.header_icon_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_icon {
+    margin: 20px;
+    font-size: 4em;
+    transition: all 500ms;
+    color: var(--color-dark);
+}
+
+.header_icon:hover {
+    color: var(--color-gray);
+}
+
+.header_content h3 {
+    font-family: "微軟正黑體", "kanit";
+}
+
+.header_btn {
+    background-color: var(--color-one);
+    color: #4c3c31 !important;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.header_btn:hover {
+    background-color: var(--color-light);
+    font-size: 20px;
+}
+
+/* contest */
+
+.contest {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-two);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(./images/contest_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left; */
+}
+
+/* 
+.contest_container {
+    height: 70vh;
+} */
+
+.contest_content {
+    /* width: 100%; */
+    color: var(--color-dark);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr); */
+}
+
+.contest_item {
+    display: grid;
+    gap: 1.5em;
+    cursor: pointer;
+    grid-template-columns: 1fr max-content 1fr;
+    margin: 50px 0;
+}
+
+.contest_dot {
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    margin: auto;
+    background-color: var(--color-dark);
+    display: inline-block;
+    z-index: 98;
+    position: relative;
+}
+
+.contest_line {
+    height: calc(100% + 100px);
+    width: 5px;
+    display: block;
+    background-color: var(--color-gray);
+    transform: translate(7px, -6px);
+}
+
+
+.contest_title {
+    font-family: "Caveat";
+    font-size: 5em;
+    color: #4c3c31;
+    letter-spacing: 20px;
+}
+
+.contest_font {
+    width: 45%;
+}
+
+.title_line {
+    background-color: var(--color-dark);
+    width: 100px;
+    height: 5px;
+    border-radius: 20px;
+
+}

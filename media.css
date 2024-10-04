@@ -1,0 +1,9 @@
+@media (max-width:768px) {
+    .header_content_one {
+        margin-top: 100px;
+    }
+
+    .header_content {
+        text-align: center;
+    }
+}
