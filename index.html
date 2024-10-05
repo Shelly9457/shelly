@@ -196,35 +196,41 @@
             </div>
         </div>
         <div id="skill"></div>
-        <div class="container-fluid pe-0 skill ">
-            <div class="container py-5 skill_container">
+        <div class="container-fluid pe-0 skill py-5">
+            <div class="container py-5">
                 <div class="row">
                     <h1 class="title text-center mb-5">skill</h1>
-                    <div class="col-sm-12 col-lg-6">
-                        <div class="skill_content">
-                            <i class="bi bi-braces skill_icon_code"></i>
-                            <div class="text-center">
-                                <h1 class="skill_title">code</h1>
-                                <h5 style="color: var(--color-gray);">查看5 個項目</h5>
-                            </div>
-                            <i class="bi bi-chevron-down fs-3 skill_icon_arrow"></i>
-                            <div class="skill_box ms-auto">
-                                <div class="skill_item my-3" v-for="(item,index) in code" :key="index">
-                                    <div class="box justify-content-between">
-                                        <h1 class="me-5 mb-0" style="color: var(--color-dark);">{{item.name}}</h1>
-                                        <h1 style="color: var(--color-gray);">{{item.percent}}%</h1>
+                    <div class="col-sm-12 col-lg-6" v-for="(skill_item,skill_index) in skill" key="skill_index">
+                        <div class="skill_container">
+                            <div class="skill_content">
+                                <div class="box justify-content-between w-100" style="cursor: pointer;"
+                                    @click="switch_skill(skill_index)">
+                                    <span v-html="skill_item.html"></span>
+                                    <div class="text-center">
+                                        <h1 class="skill_title">{{skill_item.title}}</h1>
+                                        <h5 style="color: var(--color-gray);">查看{{ skill_item.data.length }} 個項目</h5>
                                     </div>
-                                    <div class="skill_box_line" :style="{ '--line-width': item.percent + '%' }"></div>
+                                    <i class="bi bi-chevron-down fs-3"></i>
+                                </div>
+                                <div class="skill_box"
+                                    :style="{ maxHeight: skill_switch[skill_index] ? '1000px' : '0' }">
+                                    <div class="skill_item my-4" v-for="(item,index) in skill_item.data" :key="item">
+                                        <div class="box justify-content-between">
+                                            <h1 class="me-5 mb-0" style="color: var(--color-dark);">{{item.name}}</h1>
+                                            <h1 style="color: var(--color-gray);">{{item.percent}}%</h1>
+                                        </div>
+                                        <div class="skill_box_line" :style="{ '--line-width': item.percent + '%' }">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-6">
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
     </main>
     <footer></footer>
     <script src="./data.js"></script>

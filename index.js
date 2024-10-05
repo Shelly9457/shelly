@@ -45,7 +45,14 @@ const app = Vue.createApp({
                 },
             ],
             workdata: WORKDATA,
-            code: CODEDATA,
+            skill: SKILLDATA,
+            skill_switch: [false, false],
         }
     },
+    methods: {
+        switch_skill(index) {
+            this.skill_switch[index] = !this.skill_switch[index]
+        },
+    }
 }).mount('#app')
+

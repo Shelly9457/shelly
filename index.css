@@ -245,23 +245,20 @@ header {
 .skill {
     min-height: 100vh;
     background-color: var(--color-two);
-    /* display: flex; */
-    /* justify-content: end; */
-}
-
-.skill_container {
-    /* margin: 0; */
 }
 
 .skill_content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     font-family: "Caveat";
     border-radius: 20px;
     background-color: var(--color-light);
-    padding: 20px 40px;
+    padding: 10px 40px;
     color: var(--color-dark);
+    overflow: hidden;
+    height: auto;
 }
 
 .skill_title {
@@ -272,16 +269,16 @@ header {
     font-size: 4.5em;
 }
 
-.skill_icon_arrow {
-    cursor: pointer;
-}
+/* :style="{visibility: skill_switch?'visible':'hidden'}" */
 
 .skill_box {
     background-color: var(--color-light);
     border-radius: 20px;
-    width: 80%;
-    margin: 20px 0;
-    padding: 20px 40px;
+    padding: 0px 40px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms ease;
 }
 
 .skill_item {

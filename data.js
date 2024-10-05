@@ -18,31 +18,41 @@ const WORKDATA = [{
     text: ""
 },]
 
-const CODEDATA = [{
-    name: "Html",
-    percent: 90,
+const SKILLDATA = [{
+    title: 'code',
+    data: [{
+        name: "Html",
+        percent: 90,
+    }, {
+        name: "CSS",
+        percent: 80,
+    }, {
+        name: "Javasctipt",
+        percent: 70,
+    }, {
+        name: "python",
+        percent: 50,
+    }, {
+        name: "Java",
+        percent: 20,
+    }, {
+        name: "php",
+        percent: 30,
+    },],
+    html: "<i class='bi bi-braces skill_icon_code'></i>"
 }, {
-    name: "CSS",
-    percent: 80,
-}, {
-    name: "Javasctipt",
-    percent: 70,
-}, {
-    name: "python",
-    percent: 50,
-}, {
-    name: "Java",
-    percent: 20,
+    title: 'Kits&frames',
+    data: [{
+        name: "bootstrap",
+        percent: 80,
+    }, {
+        name: "vue.js",
+        percent: 20,
+    }, {
+        name: "react",
+        percent: 10,
+    },],
+    html: "<i class='bi bi-bootstrap skill_icon_code'></i>"
 },]
 
 
-// {
-//     name: "bootstrap",
-//     percent: 80,
-// }, {
-//     name: "vue.js",
-//     percent: 20,
-// }, {
-//     name: "react",
-//     percent: 10,
-// },
