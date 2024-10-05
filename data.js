@@ -11,7 +11,7 @@ const WORKDATA = [{
     href: "https://shelly9457.github.io/New-Taipei-City/",
     text: ""
 }, {
-    name: "新北勢伴手禮研發中心行銷網站",
+    name: "新北市伴手禮研發中心行銷網站",
     image1: ["./images/work3.png", "./images/work3-3.png", "./images/work3-5.png"],
     image2: ["./images/work3-2.png", "./images/work3-4.png", "./images/work3-6.png"],
     href: "https://shelly9457.github.io/center/",

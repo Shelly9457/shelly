@@ -245,6 +245,7 @@ header {
 .skill {
     min-height: 100vh;
     background-color: var(--color-two);
+    transition: all 500ms ease;
 }
 
 .skill_content {
@@ -268,8 +269,6 @@ header {
 .skill_icon_code {
     font-size: 4.5em;
 }
-
-/* :style="{visibility: skill_switch?'visible':'hidden'}" */
 
 .skill_box {
     background-color: var(--color-light);
@@ -315,4 +314,24 @@ header {
     background-color: #efd8d7af;
     width: 80%;
     margin-left: auto;
+}
+
+/* footer */
+footer {
+    font-family: 'Caveat';
+    background-color: var(--color-one);
+    color: var(--color-dark);
+}
+
+.footer_serve_box {
+    font-size: 1.5em;
+}
+
+.footer_serve {
+    font-size: 3.5em;
+    text-wrap: nowrap;
+}
+
+.footer_icon {
+    font-size: 2em;
 }

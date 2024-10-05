@@ -14,11 +14,13 @@
         align-items: center;
         text-wrap: nowrap;
     }
+
+    .footer_media {
+        justify-content: center;
+    }
 }
 
 @media (max-width:768px) {
-
-
     .header_content_one {
         margin-top: 100px;
     }
@@ -35,5 +37,22 @@
 @media (max-width:576px) {
     body {
         font-size: 12px;
+    }
+
+    .skill_media {
+        margin: 3em 0;
+    }
+
+    footer * {
+        text-align: center;
+    }
+    .title{
+        letter-spacing: 10px;
+    }
+}
+
+@media (max-width:630px) {
+    #work_img2 {
+        right: 50%;
     }
 }

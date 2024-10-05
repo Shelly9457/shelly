@@ -200,7 +200,8 @@
             <div class="container py-5">
                 <div class="row">
                     <h1 class="title text-center mb-5">skill</h1>
-                    <div class="col-sm-12 col-lg-6" v-for="(skill_item,skill_index) in skill" key="skill_index">
+                    <div class="col-sm-12 col-lg-6 my-sm-3 my-lg-0 skill_media"
+                        v-for="(skill_item,skill_index) in skill" key="skill_index">
                         <div class="skill_container">
                             <div class="skill_content">
                                 <div class="box justify-content-between w-100" style="cursor: pointer;"
@@ -226,13 +227,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6">
-                    </div>
-
                 </div>
             </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container footer_container py-5">
+            <div class="row">
+                <div class="col-sm-12 col-lg-4 text-sm-center">
+                    <h1 class="title">Shelly</h1>
+                    <h3 style="color: var(--color-gray);">nice to meet you</h3>
+                </div>
+                <div class="col-sm-12 col-lg-4 text-sm-center footer_serve_box text-center">
+                    <h1 class="footer_serve">serve</h1>
+                    <p>UI/UX 設計</p>
+                    <p>前端網頁撰寫</p>
+                    <p>網頁切版</p>
+                </div>
+                <div class="col-sm-12 col-lg-4  footer_serve_box">
+                    <h1 class="footer_serve text-lg-end text-sm-center">contact me</h1>
+                    <div class="box justify-content-lg-end footer_media">
+                        <a href="https://line.me/ti/p/pZf8bZGV5l" class="header_icon footer_icon" target="_blank">
+                            <i class="bi bi-line"></i>
+                        </a>
+                        <a href="https://github.com/shelly9457" class="header_icon footer_icon" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./data.js"></script>
     <script src="./index.js"></script>
 </body>

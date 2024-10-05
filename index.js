@@ -3,7 +3,6 @@ window.addEventListener('DOMContentLoaded', () => {
     gsap.to(".contest_font", {
         scrollTrigger: {
             trigger: '.contest_font',
-            // markers: true,
             pin: true,
             start: '40% center',
             endTrigger: ".contest",
@@ -14,7 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
     gsap.to(".work_font", {
         scrollTrigger: {
             trigger: '.work_font',
-            markers: true,
             pin: true,
             start: '45% center',
             endTrigger: ".work",
@@ -46,7 +44,7 @@ const app = Vue.createApp({
             ],
             workdata: WORKDATA,
             skill: SKILLDATA,
-            skill_switch: [false, false],
+            skill_switch: [true, false],
         }
     },
     methods: {
