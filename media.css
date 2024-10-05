@@ -32,6 +32,10 @@
     .title_line {
         display: none;
     }
+
+    .work_item {
+        margin-bottom: 200px;
+    }
 }
 
 @media (max-width:576px) {
@@ -46,9 +50,11 @@
     footer * {
         text-align: center;
     }
-    .title{
+
+    .title {
         letter-spacing: 10px;
     }
+
 }
 
 @media (max-width:630px) {
