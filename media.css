@@ -3,11 +3,13 @@
         font-size: 16px;
     }
 
-    .contest_font_box {
+    .contest_font_box,
+    .work_font_box {
         display: none;
     }
 
-    .contest_me {
+    .contest_me,
+    .work_me {
         display: flex;
         align-items: center;
         text-wrap: nowrap;

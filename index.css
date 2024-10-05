@@ -29,9 +29,10 @@ a {
 }
 
 .title {
+    font-family: "Caveat";
     font-size: 5em;
     color: var(--color-dark);
-    font-weight: bold;
+    letter-spacing: 20px;
 }
 
 header {
@@ -113,6 +114,12 @@ header {
     font-family: "微軟正黑體", "kanit";
 }
 
+.header_title {
+    font-size: 5em;
+    color: var(--color-dark);
+    font-weight: bold;
+}
+
 .header_btn {
     background-color: var(--color-one);
     color: #4c3c31 !important;
@@ -142,7 +149,8 @@ header {
     align-items: center;
 }
 
-.contest_me {
+.contest_me,
+.work_me {
     display: none;
 }
 
@@ -181,14 +189,10 @@ header {
 }
 
 
-.contest_title {
-    font-family: "Caveat";
-    font-size: 5em;
-    color: var(--color-dark);
-    letter-spacing: 20px;
-}
 
-.contest_font,.work_font {
+
+.contest_font,
+.work_font {
     width: 50%;
     height: 80vh;
     object-fit: contain;
@@ -241,11 +245,77 @@ header {
 .skill {
     min-height: 100vh;
     background-color: var(--color-two);
+    /* display: flex; */
+    /* justify-content: end; */
 }
 
-.work_title {
+.skill_container {
+    /* margin: 0; */
+}
+
+.skill_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-family: "Caveat";
-    font-size: 5em;
-    color: #4c3c31;
-    letter-spacing: 20px;
+    border-radius: 20px;
+    background-color: var(--color-light);
+    padding: 20px 40px;
+    color: var(--color-dark);
+}
+
+.skill_title {
+    font-size: 3.5em;
+}
+
+.skill_icon_code {
+    font-size: 4.5em;
+}
+
+.skill_icon_arrow {
+    cursor: pointer;
+}
+
+.skill_box {
+    background-color: var(--color-light);
+    border-radius: 20px;
+    width: 80%;
+    margin: 20px 0;
+    padding: 20px 40px;
+}
+
+.skill_item {
+    width: 100%;
+}
+
+.skill_item h1 {
+    font-family: "Caveat";
+    font-size: 2.5em;
+}
+
+.skill_box_line {
+    flex: 1;
+    background-color: var(--color-gray);
+    position: relative;
+    border-radius: 20px;
+    height: 7px;
+}
+
+.skill_box_line::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    left: 0;
+    width: 50%;
+    width: var(--line-width);
+    background-color: var(--color-dark);
+}
+
+.serve_box {
+    color: var(--color-dark);
+    background-color: #efd8d7af;
+    width: 80%;
+    margin-left: auto;
 }

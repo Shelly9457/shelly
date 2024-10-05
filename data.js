@@ -17,3 +17,32 @@ const WORKDATA = [{
     href: "https://shelly9457.github.io/center/",
     text: ""
 },]
+
+const CODEDATA = [{
+    name: "Html",
+    percent: 90,
+}, {
+    name: "CSS",
+    percent: 80,
+}, {
+    name: "Javasctipt",
+    percent: 70,
+}, {
+    name: "python",
+    percent: 50,
+}, {
+    name: "Java",
+    percent: 20,
+},]
+
+
+// {
+//     name: "bootstrap",
+//     percent: 80,
+// }, {
+//     name: "vue.js",
+//     percent: 20,
+// }, {
+//     name: "react",
+//     percent: 10,
+// },

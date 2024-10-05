@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 header_content">
-                    <div class="title">HELLO!</div>
+                    <div class="header_title">HELLO!</div>
                     <h3>我叫Shelly<br>目前就讀台北商業大學資訊管理系二年級<br>對於設計網頁抱有熱誠<br>你將透過此網頁更加地了解我!</h3>
                     <h3>My name is shelly, you will get to know me better through this page!</h3>
                     <div class="w-100 my-3">
@@ -81,7 +81,7 @@
         <div class="contest container-fluid py-5">
             <div class="container contest_container py-5">
                 <div class="contest_me">
-                    <h1 class="contest_title">contest ME</h1>
+                    <h1 class="title">contest ME</h1>
                     <div class="title_line ms-3"></div>
                 </div>
                 <div class="row">
@@ -163,8 +163,12 @@
         <div id="work"></div>
         <div class="container-fluid work py-5">
             <div class="container py-5">
+                <div class="work_me">
+                    <h1 class="title">work</h1>
+                    <div class="title_line ms-3"></div>
+                </div>
                 <div class="row">
-                    <div class="work_content col-sm-12 col-lg-6">
+                    <div class="work_content col-sm-12 col-lg-7">
                         <div class="work_item" v-for="item in workdata">
                             <h1>{{item.name}}</h1>
                             <div id="" class="carousel slide carousel-fade work_run" data-bs-ride="carousel">
@@ -185,25 +189,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6 d-flex justify-content-end">
+                    <div class=" work_font_box col-sm-12 col-lg-5 box align-items-start justify-content-end">
                         <img src="./images/work_font.png" class="work_font">
                     </div>
                 </div>
             </div>
         </div>
         <div id="skill"></div>
-        <div class="container-fluid skill py-5">
-            <div class="container py-5">
+        <div class="container-fluid pe-0 skill ">
+            <div class="container py-5 skill_container">
                 <div class="row">
+                    <h1 class="title text-center mb-5">skill</h1>
                     <div class="col-sm-12 col-lg-6">
-                        <div class="contest_me">
-                            <h1 class="contest_title">contest ME</h1>
-                            <div class="title_line ms-3"></div>
+                        <div class="skill_content">
+                            <i class="bi bi-braces skill_icon_code"></i>
+                            <div class="text-center">
+                                <h1 class="skill_title">code</h1>
+                                <h5 style="color: var(--color-gray);">查看5 個項目</h5>
+                            </div>
+                            <i class="bi bi-chevron-down fs-3 skill_icon_arrow"></i>
+                            <div class="skill_box ms-auto">
+                                <div class="skill_item my-3" v-for="(item,index) in code" :key="index">
+                                    <div class="box justify-content-between">
+                                        <h1 class="me-5 mb-0" style="color: var(--color-dark);">{{item.name}}</h1>
+                                        <h1 style="color: var(--color-gray);">{{item.percent}}%</h1>
+                                    </div>
+                                    <div class="skill_box_line" :style="{ '--line-width': item.percent + '%' }"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-6">
                     </div>
                 </div>
+
             </div>
         </div>
     </main>

@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
             trigger: '.work_font',
             markers: true,
             pin: true,
-            start: '40% center',
+            start: '45% center',
             endTrigger: ".work",
             end: '90% bottom',
             scrub: 1,
@@ -44,7 +44,8 @@ const app = Vue.createApp({
                     class: "my_btn3",
                 },
             ],
-            workdata: WORKDATA
+            workdata: WORKDATA,
+            code: CODEDATA,
         }
     },
 }).mount('#app')
