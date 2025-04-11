@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: '微軟正黑體';
+    position: relative;
+}
+
+[lang|="en"] {
+    font-family: "Itim", cursive;
+}
+
+.link {
+    position: relative;
+}
+
+.link::after {
+    content: "";
+    transition: transform 500ms linear;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.about_title::after,
+.skill_title::after,
+.works_title::after,
+.contact_title::after {
+    content: "about-";
+    position: absolute;
+    color: #666;
+    bottom: -35px;
+    left: 10px;
+    font-size: 20px;
+    font-family: "Itim", cursive;
+}
+
+.skill_title::after {
+    content: "skill-";
+}
+
+.works_title::after {
+    content: 'works-';
+}
+
+.contact_title::after {
+    content: 'contact me-';
+}
+
+.me_img {
+    transition: all 300ms;
+}
+
+.works {
+    transition: all 500ms;
+    transform: translateX(0%);
+}
