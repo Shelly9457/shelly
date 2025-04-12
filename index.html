@@ -45,7 +45,7 @@
                         class="px-10 py-3 my-5 sm:mt-10 text-xl rounded-full bg-[#FDFCFB] shadow-lg">了解我</a>
                 </article>
                 <div class="w-full lg:w-[50%] flex justify-center lg:justify-end items-center ">
-                    <img src="images/me_img.png" class="w-[65%] lg:w-[70%] me_img z-98">
+                    <img src="images/me_img.png" class="w-[65%] lg:w-[80%] xl:w-[70%] me_img z-98">
                 </div>
             </section>
         </header>
@@ -81,10 +81,10 @@
                             <h1 class="text-3xl ml-3">52 & 55屆技能競賽北區分區賽網頁技術佳作</h1>
                         </div>
                         <div class="item flex text-5xl justify-center">
-                            <a href="" class="mx-2">
+                            <a href="https://github.com/Shelly9457" target="_blank" class="mx-2">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-                            <a href="" class="mx-10">
+                            <a href="https://www.instagram.com/shelly.9457" target="_blank" class="mx-10">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -169,18 +169,20 @@
                         作品集
                     </h1>
                     <div class="w-full mt-10 min-h-[60vh] relative">
-                        <span @click="next(-1)" class="prve arrow z-99 cursor-pointer absolute text-2xl top-[50%] ">
+                        <span @click="next(-1)"
+                            class="prve arrow z-99 cursor-pointer absolute text-2xl top-[50%] left-[-10%] ">
                             <i class="fa-duotone fa-solid fa-chevron-left"></i>
                         </span>
                         <span @click="next(1)"
-                            class="next arrow z-99 cursor-pointer absolute text-2xl top-[50%]  left-[102%]">
+                            class="next arrow z-99 cursor-pointer absolute text-2xl top-[50%]  right-[-10%]">
                             <i class="fa-duotone fa-solid fa-chevron-right"></i>
                         </span>
                         <div class="overflow-hidden">
                             <div class="flex works" ref="works">
                                 <div class="min-w-full  flex flex-wrap min-h-[60vh]" v-for="item in imgdata">
                                     <div class="w-full lg:w-[50%] justify-center items-center flex">
-                                        <img :src="item.img" class="w-[80%] mb-4" alt="">
+                                        <img :src="item.img"
+                                            class=" h-50 w-full xl:h-[80%] xl:w-[80%] object-cover mr-auto mb-4" alt="">
                                     </div>
                                     <div class="w-full lg:w-[50%] flex flex-col justify-center gap-10">
                                         <div>

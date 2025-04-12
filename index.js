@@ -48,16 +48,23 @@ const app = Vue.createApp({
 window.addEventListener('scroll', e => {
     let scrolls = window.pageYOffset
     let width = window.innerWidth
+    let img = document.querySelector(".me_img")
     if (scrolls <= 1000) {
         if (scrolls >= 500) {
-            document.querySelector(".me_img").src = "images/me_img2.png"
-            document.querySelector('.me_img').style.transform = `translateY(${scrolls + 100}px)`
+            img.src = "images/me_img2.png"
+            // if (width <= 1120) {
+            //     img.style.transform = `translate(100px,${scrolls + 40}px)`
+            // }else
+            //  {
+            // }
+            img.style.transform = `translateY(${scrolls + 40}px)`
         } else {
-            document.querySelector(".me_img").src = "images/me_img.png"
-            document.querySelector('.me_img').style.transform = `translateY(${scrolls}px)`
+            img.src = "images/me_img.png"
+            img.style.transform = `translateY(${scrolls}px)`
+
         }
         if (width <= 1028) {
-            document.querySelector('.me_img').style.transform = ''
+            img.style.transform = ''
         }
     }
 
