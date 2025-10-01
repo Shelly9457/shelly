@@ -10,6 +10,13 @@ const app = Vue.createApp({
                 color: ['#5d9b84', '#f59b55', '#fff', '#000'],
                 href: 'https://shelly9457.github.io/contest/',
             }, {
+                name: 'PlantyLife',
+                code: 'tailwind/vue.js',
+                content: 'PlantyLife 是我個人的 side project，一個以植物為主題的小網站。透過簡潔的設計與自然氛圍，呈現出與綠植共處的日常靈感。這個作品展現了我在前端設計與互動效果上的嘗試，也體現我對生活美學與數位設計結合的探索。',
+                img: 'images/Desktop - 5.png',
+                color: ['#5C715E', '#F6F1EB', '#A4C3B2', '#889a74'],
+                href: 'https://shelly9457.github.io/PlantyLife/',
+            }, {
                 name: '集順廟明德宮',
                 code: 'bootstrap5/aos.js',
                 content: '大一服務學習課程的小組成果網站，主題為介紹新北市石碇區的集順廟明德宮。​網站內容涵蓋廟宇歷史、建築特色、交通指南及參拜資訊，旨在提升在地文化的可見度與親和力。​我在團隊中負責前端程式碼的撰寫與整合，將資料轉化為互動式網頁，讓訪客能以直觀方式了解廟宇資訊。',
@@ -30,14 +37,7 @@ const app = Vue.createApp({
                 img: 'images/Desktop - 4.png',
                 color: ['#aa1f24', '#ffffff', '#dfce76', '#d38d8f'],
                 href: 'https://shelly9457.github.io/center/',
-            }, {
-                name: 'PlantyLife',
-                code: 'tailwind/vue.js/',
-                content: 'PlantyLife 是我個人的 side project，一個以植物為主題的小網站。透過簡潔的設計與自然氛圍，呈現出與綠植共處的日常靈感。這個作品展現了我在前端設計與互動效果上的嘗試，也體現我對生活美學與數位設計結合的探索。',
-                img: 'images/Desktop - 5.png',
-                color: ['#5C715E', '#F6F1EB', '#A4C3B2', '#889a74'],
-                href: 'https://shelly9457.github.io/PlantyLife/',
-            }],
+            },],
             count: 0,
         }
     },
