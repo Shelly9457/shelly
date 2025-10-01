@@ -30,6 +30,13 @@ const app = Vue.createApp({
                 img: 'images/Desktop - 4.png',
                 color: ['#aa1f24', '#ffffff', '#dfce76', '#d38d8f'],
                 href: 'https://shelly9457.github.io/center/',
+            }, {
+                name: 'PlantyLife',
+                code: 'tailwind/vue.js/',
+                content: 'PlantyLife 是我個人的 side project，一個以植物為主題的小網站。透過簡潔的設計與自然氛圍，呈現出與綠植共處的日常靈感。這個作品展現了我在前端設計與互動效果上的嘗試，也體現我對生活美學與數位設計結合的探索。',
+                img: 'images/Desktop - 5.png',
+                color: ['#5C715E', '#F6F1EB', '#A4C3B2', '#889a74'],
+                href: 'https://shelly9457.github.io/PlantyLife/',
             }],
             count: 0,
         }
